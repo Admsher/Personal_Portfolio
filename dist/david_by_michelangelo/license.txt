@@ -1,0 +1,11 @@
+Model Information:
+* title:	David by Michelangelo
+* source:	https://sketchfab.com/3d-models/david-by-michelangelo-3a8f65d7db8e4ba7a0ea886e2b636128
+* author:	jerryfisher (https://sketchfab.com/jerryfisher)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "David by Michelangelo" (https://sketchfab.com/3d-models/david-by-michelangelo-3a8f65d7db8e4ba7a0ea886e2b636128) by jerryfisher (https://sketchfab.com/jerryfisher) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Greek Structure
+* source:	https://sketchfab.com/3d-models/greek-structure-1704b62443d545de98036966c43ab6b2
+* author:	Kenny Park (https://sketchfab.com/parkkennypark)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Greek Structure" (https://sketchfab.com/3d-models/greek-structure-1704b62443d545de98036966c43ab6b2) by Kenny Park (https://sketchfab.com/parkkennypark) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
