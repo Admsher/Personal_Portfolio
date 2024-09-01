@@ -30,7 +30,8 @@ import {
   python,
   bits,
   nal,
-  arduino
+  arduino,
+  linux
 } from "../assets";
 
 export const navLinks = [
@@ -125,6 +126,10 @@ const technologies = [
   {
     name: "arduino",
     icon: arduino,
+  },
+  {
+    name: "linux",
+    icon: linux,
   },
 ];
 

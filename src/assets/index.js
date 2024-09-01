@@ -34,6 +34,7 @@ import python from "./tech/python.png";
 import bits from "./company/bits.png";
 import nal from "./company/nal.png";
 import arduino from "./tech/Arduino_Logo.png"
+import linux from "./tech/linux.png"
 export {
   logo,
   backend,
@@ -70,5 +71,6 @@ export {
   python,
   bits,
   nal,
-  arduino 
+  arduino,
+  linux
 };
