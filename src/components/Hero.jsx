@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 
 import { styles } from "../style";
 import { AmorsCanvas, PillarCanvas } from "./canvas";
+import meetImage from "../assets/meet.jpg";
 
 const Hero = () => {
   return (
     
     <section className={`relative w-full h-screen mx-auto`}>
-      <img src="/src/assets/meet.jpg" alt="Background Image" class="w-full h-full object-cover opacity-50"></img>
+      <img src={meetImage} alt="Background Image" class="w-full h-full object-cover opacity-50"></img>
        
       <div
         className={`absolute inset-0 top-[120px]  max-w-10xl mx-auto flex flex-row items-start gap-5 `}
