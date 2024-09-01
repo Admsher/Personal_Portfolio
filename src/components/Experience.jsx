@@ -6,7 +6,7 @@ import {
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
-
+import  colosseum from "../assets/colosseum.png";
 import { styles } from "../style";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -59,7 +59,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <div className="relative w-full h-full">
-    <img src="/src/assets/colosseum.png" alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
+    <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
 
     <motion.div variants={textVariant()} className="relative z-10">
         <h2 className={`${styles.sectionHeadText} text-center`}>

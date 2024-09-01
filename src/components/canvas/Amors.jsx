@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import miAMor from "build/amor_und_psyche/scene.gltf";
 import CanvasLoader from "../Loader";
 
 const Amors = ({ isMobile }) => {

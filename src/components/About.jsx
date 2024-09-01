@@ -5,7 +5,7 @@ import {styles} from '../style'
 import { services } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
-
+import pin from '/src/assets/pin.jpg'
 
 const ServiceCard = ({ index, title, description }) => {
   return (
@@ -40,7 +40,7 @@ const ServiceCard = ({ index, title, description }) => {
 const About = () => {
   return (
    <section className={`relative w-full h-screen mx-auto`}>
-<img src="/src/assets/pin.jpg" alt="Background Image" class="w-full h-full object-cover opacity-20"></img>  
+<img src={pin} alt="Background Image" class="w-full h-full object-cover opacity-20"></img>  
   {/* <section className={`relative w-full h-screen mx-auto`}> */}
    <div className={`absolute inset-0 top-[120px]  max-w-10xl flex-row items-start gap-5 `}> 
     <motion.div variants={textVariant()}>
