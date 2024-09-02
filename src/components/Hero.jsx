@@ -58,7 +58,7 @@ const Hero = () => {
 
         </div>
         
-            <AmorsCanvas  />
+            {/* <AmorsCanvas  /> */}
         
       </div>
 
