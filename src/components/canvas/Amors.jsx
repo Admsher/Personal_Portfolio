@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Amors = ({ isMobile }) => {
-  const Amor = useGLTF("/build/amor_und_psyche/scene.gltf");
+  const Amor = useGLTF("public/amor_und_psyche/scene.gltf");
 
   return (
     <mesh>
