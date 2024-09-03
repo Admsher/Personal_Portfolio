@@ -136,7 +136,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer",
+    title: "Software Developer (Intern)",
     company_name: "Lenest",
     icon: lenest,
     iconBg: "#383E56",
@@ -151,7 +151,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer ",
     company_name: "BITS Pilani Goa- AUGSD",
     icon: bits,
     iconBg: "#E6DEDD",
@@ -166,7 +166,7 @@ const experiences = [
     ],
   },
   {
-    title: "PCB Developer",
+    title: "PCB Developer (Intern)",
     company_name: "IIT Roorkee",
     icon: iit,
     iconBg: "#E6DEDD",
@@ -180,7 +180,7 @@ const experiences = [
     ],
   },
   {
-    title: "PCB Designer and Embedded Developer",
+    title: "PCB Designer and Embedded Developer (Intern)",
     company_name: "VNIT Nagpur",
     icon: VNIT ,
     iconBg: "#383E56",
@@ -194,7 +194,7 @@ const experiences = [
     ],
   },
   {
-    title: "Backend Developer",
+    title: "Backend Developer (Intern)",
     company_name: "Zummit Infolabs",
     icon: Zummit,
     iconBg: "#E6DEDD",
@@ -207,7 +207,7 @@ const experiences = [
     ],
   },
    {
-    title: "PCB Developer",
+    title: "PCB Developer (Intern)",
     company_name: "Khagheshwara Aviation Technology",
     icon: KAT,
     iconBg: "#E6DEDD",
@@ -220,7 +220,7 @@ const experiences = [
     ],
   },
   {
-    title: "Embedded Developer",
+    title: "Embedded Developer (Intern)",
     company_name: "CSIR NAL",
     icon: nal,
     iconBg: "#383E56",

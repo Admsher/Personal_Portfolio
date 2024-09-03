@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Tilt } from 'react-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../style'
@@ -6,7 +6,7 @@ import { services } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import pin from '/src/assets/pin.jpg'
-
+import React, { Suspense, useEffect, useState } from "react";
 const ServiceCard = ({ index, title, description }) => {
   return (
     <div className='xs:w-[1000px] h-[320px]'>
@@ -38,8 +38,31 @@ const ServiceCard = ({ index, title, description }) => {
 };
 
 const About = () => {
+   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 1200px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
   return (
-   <section className={`relative w-full h-screen mx-auto`}>
+   <section className="relative w-full h-full" style={{
+  marginTop: isMobile ? "200px" : "0px"}}>
 <img src={pin} alt="Background Image" class="w-full h-full object-cover opacity-20"></img>  
   {/* <section className={`relative w-full h-screen mx-auto`}> */}
    <div className={`absolute inset-0 top-[120px]  max-w-10xl flex-row items-start gap-5 `}> 
@@ -50,7 +73,7 @@ const About = () => {
 
 
 
-      <div className='mt-20 flex flex-col gap-6' style={{alignItems: "center"}}>
+    <div className='mt-20 flex flex-col gap-10'  style={{ justifyContent: 'center', alignItems: 'center' }}>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -57,8 +57,37 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 1200px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+
+
+
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full" style={{
+  marginTop: isMobile ? "1000px" : "0px"
+}}>
     <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
 
     <motion.div variants={textVariant()} className="relative z-10">
@@ -68,6 +97,7 @@ const Experience = () => {
     </motion.div>
 
     <div className="relative z-10 mt-20 flex flex-col">
+      
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
