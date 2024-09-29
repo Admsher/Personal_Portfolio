@@ -1,42 +1,56 @@
-import React from 'react'
+
 import {motion} from 'framer-motion'
 import CanvasLoader from './Loader'
+import React, { useState } from "react";
 import { styles } from '../style'
 import { SectionWrapper } from '../hoc'
 import {github } from '../assets'
 import { projects } from '../constants'
 import {fadeIn , textVariant} from '../utils/motion'
+import Popup from './Popup';
 // import Tilt from "react-tilt";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
-  return (
+const ProjectCard = ({index, name, description, tags, image, source_code_link,images}) => {
+ const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+    console.log("Popping")
+  };
+
+   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/* <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      > */}
+   
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
-
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+<div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+  <div
+    onClick={() => window.open(source_code_link, "_blank")}
+    className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-3'
+  >
+    <img
+      src={github}
+      alt='source code'
+      className='w-1/2 h-1/2 object-contain'
+    />
+  </div>
+  <div
+    onClick={togglePopup}
+    className='black-gradient w-37 h-10 l flex justify-center items-center cursor-pointer'
+    style={{
+      borderRadius: "10px",
+      boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    }}
+  >
+    <span style={{ color: "white" }}>See More</span>
+  </div>
+</div>
           </div>
         </div>
 
@@ -55,12 +69,24 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
             </p>
           ))}
         </div>
-      {/* </Tilt> */}
+           {isPopupOpen && (
+        <Popup
+          isOpen={isPopupOpen}
+          onClose={togglePopup}
+          content={{
+            name: name,
+            images: images,
+            description: description,
+          }}
+        />
+      )}
+      {/* ... */}
     </motion.div>
   );
 }
 
 const Works = () => {
+  
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -81,7 +107,9 @@ const Works = () => {
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
+    
+      </div>  
+    
     </>
   );
 }

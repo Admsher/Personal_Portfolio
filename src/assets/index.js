@@ -27,6 +27,10 @@ import lenest from "./company/lenest.jpeg";
 import iit from "./company/iit-roorkee.jpeg";
 import KAT from "./company/KAT.jpeg";
 import carrent from "./carrent.png";
+import netro_1 from "./netro-1.png";
+import netro_2 from "./netro-2.png";
+import netro_3 from "./netro-3.png";
+import netro_4 from "./netro-4.png";
 import jobit from "./landsat.jpeg";
 import tripguide from "./IMXRT1064.jpg";
 import django from "./tech/django.png";
@@ -35,6 +39,7 @@ import bits from "./company/bits.png";
 import nal from "./company/nal.png";
 import arduino from "./tech/Arduino_Logo.png"
 import linux from "./tech/linux.png"
+import esp from "./ESP.jpeg"
 export {
   logo,
   backend,
@@ -72,5 +77,10 @@ export {
   bits,
   nal,
   arduino,
-  linux
+  linux,
+  netro_1,
+  netro_2,
+  netro_3,
+  netro_4,
+  esp
 };

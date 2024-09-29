@@ -31,7 +31,12 @@ import {
   bits,
   nal,
   arduino,
-  linux
+  linux,
+  netro_1,
+  netro_2,
+  netro_3,
+  netro_4,
+  esp
 } from "../assets";
 
 export const navLinks = [
@@ -64,8 +69,9 @@ const services = [
     title: "Hobbies/Interests",
     description: [
       "I like to read books whenever I have free time, I also hit the gym as my daily routine.",
-      "I mostly have beeen indulged in student projects. Mainly technical, for instance I was in the MARS Rover team of my university, also have worked in projects to make Vertical Axis  Wind turbines and Piezoelectric tiles.",
-      "Apart from tech, I have  been part of the publicity department of my college in which we promoted or colleges technical fests, also have been part of SEDS in which I was in the Projects and Podcast team",
+      "I mostly have beeen indulged in student projects. Mainly technical, for instance I was in the MARS Rover team(Project Kratos) of my university, also have worked in projects to make Vertical Axis  Wind turbines and Piezoelectric tiles.",
+      "Apart from tech, I have  been part of the publicity department (DEPP) of my college in which we promoted or colleges technical fests, also have been part of SEDS in which I was in the Projects and Podcast team",
+       "Also have worked in BITSMUN Goa as a designer for posters and social media posts.",
       "In my school days I was the Sports Captain and Head Boy of my school in the penultimate and ultimate year of my schooling. I was into Taekwondo and was also a part of my school Basketball and athletics team.",
     ],
   },
@@ -279,13 +285,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: [carrent,],
+    images:[carrent,netro_1,netro_2,netro_3,netro_4],
     source_code_link: "https://github.com/Admsher/netropolis-hackathon",
   },
   {
     name: "Urban Heat Index",
     description:
-      "A Data Analysis Project to determine the Vegetation Index from USGS Landsat 8 and Landsat 9 imagery. ",
+      "A Data Analysis Project to determine the Vegetation Index from USGS Landsat 8 and Landsat 9 imagery.  FInd more here: https://github.com/Admsher/Urban-Heat-Index",
     tags: [
       {
         name: "Python",
@@ -294,6 +301,7 @@ const projects = [
      
     ],
     image: jobit,
+    images:[],
     source_code_link: "https://github.com/Admsher/Urban-Heat-Index",
   },
   {
@@ -307,7 +315,27 @@ const projects = [
       },
     ],
     image: tripguide,
+    images:[],
     source_code_link: "https://github.com/Admsher/MIMXRT1064",
+  },
+  {
+    name: "TeleMail",
+    description:
+      "A online telcounsultation device prototype made for TCOE hacakathon 2024. ",
+    tags: [
+      {
+        name: "C++",
+        color: "blue-text-gradient",
+        
+      },
+      {
+         name: "Python",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: esp,
+    images:[],
+    source_code_link: "https://github.com/Admsher/TCOE-submission",
   },
 ];
 
