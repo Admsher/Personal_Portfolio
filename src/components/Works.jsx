@@ -90,7 +90,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-     
+        
+
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
