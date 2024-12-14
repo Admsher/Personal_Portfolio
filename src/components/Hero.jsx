@@ -38,12 +38,8 @@ const Hero = () => {
          
           <p  className={`${styles.heroSubText} mt-2 text-white`}>
           Whats going on right now?<br></br><br></br>
-          . Interning at CSIR-NAL as an embedded engineer. 
-              <br></br><br></br>
-              
-          . Completing  my final year of Bachelors.
-          <br></br><br></br>
-          . Working in an aviation startup as a PCB Designer.
+         <p>Working on developing a custom Operating System on Raspberry Pi 5.</p>
+        
           </p>
           <br></br><br></br>
           <br></br>

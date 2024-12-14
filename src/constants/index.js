@@ -233,8 +233,12 @@ const experiences = [
     date: "July 2024 - Present",
     points: [
       "Migrating embedded C code to Rust for electronic monitoring unit.",
-      "Using R series processor sto run parllel processes on dual cores .",
+      "Developed a schedule plan generator adhering to ARINC 653 standards for aviation.",
+      "Wrote program for data packetisation and transmission in CAN,RS485 and UART protocols ofr an unmanned aerial vehicle.",
+      "Developed a program to TImeSync windows machines vai LAN.",
+      "Explored on pssibilities and limitations of using an R5F processor in safety critical enviroments",
       "The code will be used in safety critical applications on aircrafts.",
+    
     ],
   }
 ];
