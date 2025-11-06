@@ -36,7 +36,8 @@ import {
   netro_2,
   netro_3,
   netro_4,
-  esp
+  esp,
+  kyn
 } from "../assets";
 
 export const navLinks = [
@@ -53,7 +54,7 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-
+s
 const services = [
  
   {
@@ -230,7 +231,7 @@ const experiences = [
     company_name: "CSIR NAL",
     icon: nal,
     iconBg: "#383E56",
-    date: "July 2024 - Present",
+    date: "July 2024 - December 2024",
     points: [
       "Migrating embedded C code to Rust for electronic monitoring unit.",
       "Developed a schedule plan generator adhering to ARINC 653 standards for aviation.",
@@ -239,6 +240,16 @@ const experiences = [
       "Explored on pssibilities and limitations of using an R5F processor in safety critical enviroments",
       "The code will be used in safety critical applications on aircrafts.",
     
+    ],
+  },
+  {
+    title: "Infrastructure Specialist",
+    company_name: "Kyndryl",
+    icon: kyn,
+    iconBg: "#E6DEDD",
+    date: "August 2024 - Present",
+    points: [
+      "I just started working here and will update this section soon."
     ],
   }
 ];

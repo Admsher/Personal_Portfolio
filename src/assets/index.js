@@ -40,6 +40,7 @@ import nal from "./company/nal.png";
 import arduino from "./tech/Arduino_Logo.png"
 import linux from "./tech/linux.png"
 import esp from "./ESP.jpeg"
+import kyn from "./company/kyn.png"
 export {
   logo,
   backend,
@@ -82,5 +83,6 @@ export {
   netro_2,
   netro_3,
   netro_4,
-  esp
+  esp,
+  kyn
 };
