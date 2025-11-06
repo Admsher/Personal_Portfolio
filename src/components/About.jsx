@@ -12,20 +12,28 @@ const ServiceCard = ({ index, title, description }) => {
     <div className='xs:w-[1000px] h-[320px]'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+        className={`w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card ${
+          isMobile ? "xs:w-full xs:h-[200px]" : ""
+        }`}
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col'
+          className={`bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col ${
+            isMobile ? "xs:p-5 xs:py-3" : ""
+          }`}
         >
-          <h3 className='text-white text-[20px] font-bold text-center'>
-            {title}
-          </h3>
-          <div className='mt-4'>
+          <h3 className={`text-white text-[20px] font-bold text-center ${
+            isMobile ? "xs:text-[16px]" : ""
+          }`}>{title}</h3>
+          <div className={`mt-4 ${
+            isMobile ? "xs:text-[14px]" : ""
+          }`}>
             {description.map((point, index) => (
               <p
                 key={`${title}-${index}`}
-                className='text-white text-[14px] text-center'
+                className={`text-white text-[14px] text-center ${
+                  isMobile ? "xs:text-[12px]" : ""
+                }`}
               >
                 {point}
               </p>
@@ -36,7 +44,6 @@ const ServiceCard = ({ index, title, description }) => {
     </div>
   );
 };
-
 const About = () => {
    const [isMobile, setIsMobile] = useState(false);
 
