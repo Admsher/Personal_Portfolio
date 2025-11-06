@@ -40,7 +40,7 @@ import nal from "./company/nal.png";
 import arduino from "./tech/Arduino_Logo.png"
 import linux from "./tech/linux.png"
 import esp from "./ESP.jpeg"
-import kyn from "./company/kyn.png"
+import kyn from "./company/kyn.jpg"
 export {
   logo,
   backend,
