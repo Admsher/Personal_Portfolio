@@ -38,7 +38,7 @@ const Hero = () => {
          
           <p  className={`${styles.heroSubText} mt-2 text-white`}>
           Whats going on right now?<br></br><br></br>
-         <p>Gave up on. theOS. Now using my Pi 5 as an NAS.</p>
+         <p>Gave up on the OS. Now using my Pi 5 as an NAS.</p>
         
           </p>
           <br></br><br></br>
