@@ -7,7 +7,28 @@ import {fadeIn, textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 import pin from '/src/assets/pin.jpg'
 import React, { Suspense, useEffect, useState } from "react";
+
 const ServiceCard = ({ index, title, description }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1200px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add a listener for changes to the screen size
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <div className='xs:w-[1000px] h-[320px]'>
       <motion.div
