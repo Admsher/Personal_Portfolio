@@ -69,11 +69,15 @@ const services = [
   {
     title: "Hobbies/Interests",
     description: [
-      "I like to read books whenever I have free time, I also hit the gym as my daily routine.",
-      "I mostly have beeen indulged in student projects. Mainly technical, for instance I was in the MARS Rover team(Project Kratos) of my university, also have worked in projects to make Vertical Axis  Wind turbines and Piezoelectric tiles.",
-      "Apart from tech, I have  been part of the publicity department (DEPP) of my college in which we promoted or colleges technical fests, also have been part of SEDS in which I was in the Projects and Podcast team",
-       "Also have worked in BITSMUN Goa as a designer for posters and social media posts.",
-      "In my school days I was the Sports Captain and Head Boy of my school in the penultimate and ultimate year of my schooling. I was into Taekwondo and was also a part of my school Basketball and athletics team.",
+     "I enjoy reading books in my free time and going to the gym daily.",
+      "I’ve worked on technical student projects, including my university’s MARS Rover team.",
+      "I helped create Vertical Axis Wind Turbines and Piezoelectric tiles in other projects.",
+      "I was in the publicity department promoting technical fests in my college (DEPP).",
+      "I was part of SEDS, working in the projects and podcast teams.",
+      "I designed posters and social media posts for BITSMUN Goa.",
+      "In school, I was the Sports Captain and later the Head Boy.",
+      "I practiced Taekwondo and played basketball and athletics for my school.",
+
     ],
   },
 ];
