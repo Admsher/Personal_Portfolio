@@ -251,7 +251,7 @@ const experiences = [
     company_name: "Kyndryl",
     icon: kyn,
     iconBg: "#E6DEDD",
-    date: "August 2024 - Present",
+    date: "August 2025 - Present",
     points: [
       "I just started working here and will update this section soon."
     ],
