@@ -70,11 +70,7 @@ const services = [
     title: "Hobbies/Interests",
     description: [
      "I enjoy reading books in my free time and going to the gym daily.",
-      "I’ve worked on technical student projects, including my university’s MARS Rover team.",
-      "I helped create Vertical Axis Wind Turbines and Piezoelectric tiles in other projects.",
-      "I was in the publicity department promoting technical fests in my college (DEPP).",
-      "I was part of SEDS, working in the projects and podcast teams.",
-      "I designed posters and social media posts for BITSMUN Goa.",
+      "I’ve worked on technical student projects, like my university’s MARS Rover team.",
       "In school, I was the Sports Captain and later the Head Boy.",
       "I practiced Taekwondo and played basketball and athletics for my school.",
 
