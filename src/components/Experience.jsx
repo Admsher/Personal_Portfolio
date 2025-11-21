@@ -92,7 +92,7 @@ const Experience = () => {
 
     <motion.div variants={textVariant()} className="relative z-10">
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience
+          Experience
         </h2>
     </motion.div>
 
