@@ -90,7 +90,7 @@ const Experience = () => {
 }}>
     <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
 
-    <motion.div variants={textVariant()} className="relative z-10">
+    <motion.div variants={textVariant()}>
          <h2 className={styles.sectionHeadText}>Experience</h2>
     </motion.div>
 
