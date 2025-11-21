@@ -86,9 +86,9 @@ const Experience = () => {
 
   return (
     <div className="relative w-full h-full" style={{
-  marginTop: isMobile ? "200px" : "0px"
+  marginTop: isMobile ? "800px" : "0px"
 }}>
-    <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-full object-cover opacity-50 z-0" />
+    <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
 
     
     <div className={`absolute inset-0 top-[120px]  max-w-10xl flex-row items-start gap-5 `}/> 
