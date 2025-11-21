@@ -91,9 +91,7 @@ const Experience = () => {
     <img src={colosseum} alt="Background Image" className="absolute top-1/3  w-full h-fit object-cover opacity-50 z-0" />
 
     <motion.div variants={textVariant()} className="relative z-10">
-        <h2 className={`${styles.sectionHeadText} text-left`}>
-          Experience
-        </h2>
+         <h2 className={styles.sectionHeadText}>Experience</h2>
     </motion.div>
 
     <div className="relative z-10 mt-20 flex flex-col">
