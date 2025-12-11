@@ -61,7 +61,7 @@ const services = [
   {
     title: "Education",
     description: [
-  "I am currently in my Final Year of Bachelors in Electronics and Instrumentation form BITS Pilani Goa (2021-2025).",
+  "I have completed Bachelors in Electronics and Instrumentation form BITS Pilani Goa (2021-2025).",
   "I completed my 12th  from PACE Junior Science College-Nerul in HSC Board.",
   "My primary schooling till 10th is from Sanjivani International School Kharghar in ICSE Board.",
 ]
