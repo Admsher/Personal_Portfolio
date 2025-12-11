@@ -38,6 +38,7 @@ import {
   netro_4,
   esp,
   kyn
+  , fitbud
 } from "../assets";
 
 export const navLinks = [
@@ -352,6 +353,27 @@ const projects = [
     images:[],
     source_code_link: "https://github.com/Admsher/TCOE-submission",
   },
+
+  {
+    name: "FitBud",
+    description:
+      "A fitness app prototype made using flutter and django rest framework which helps users to keep a track of their daily fitness activities. ",
+    tags: [
+      {
+        name: "flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+    ],
+    image: fitbud,
+    images:[],
+    source_code_link: "https://github.com/Admsher/fitbud",
+    videoUrl: "src/assets/Group_08.mp4"
+  
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

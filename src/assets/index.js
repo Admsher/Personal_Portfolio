@@ -41,6 +41,7 @@ import arduino from "./tech/Arduino_Logo.png"
 import linux from "./tech/linux.png"
 import esp from "./ESP.jpeg"
 import kyn from "./company/kyn.jpg"
+import fitbud from "./fitbud.png"
 export {
   logo,
   backend,
@@ -84,5 +85,6 @@ export {
   netro_3,
   netro_4,
   esp,
-  kyn
+  kyn,
+  fitbud
 };

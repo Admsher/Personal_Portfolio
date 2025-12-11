@@ -1,5 +1,5 @@
 import React from "react";
-import '../../src/index.css';
+import "../../src/index.css";
 
 const Popup = ({ isOpen, onClose, content }) => {
   if (!isOpen) return null;
@@ -9,11 +9,21 @@ const Popup = ({ isOpen, onClose, content }) => {
       <div className="popup-content">
         <h2>{content.name}</h2>
 
-        {/* Map through images and display them */}
+        {/* Display images */}
         <div className="popup-images">
           {content.images.map((image, index) => (
             <img key={index} src={image} alt={`project_image_${index}`} />
           ))}
+        </div>
+
+        {/* Display video */}
+        <div className="popup-video">
+          {content.videoUrl && (
+            <video controls>
+              <source src={content.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
 
         <p>{content.description}</p>
